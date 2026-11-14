@@ -1,21 +1,272 @@
 [gd_scene format=3 uid="uid://x6cfgnnq0b6i"]
 
-[ext_resource type="Texture2D" uid="uid://3srswfplqvyo" path="res://jensen.png" id="1_ye7fo"]
+[ext_resource type="Script" uid="uid://bir5kdb4wkpbo" path="res://cutscene.gd" id="1_ix241"]
+[ext_resource type="Texture2D" uid="uid://cb6xgcgjfhtxg" path="res://Adobe Express - file.png" id="1_ye7fo"]
+
+[sub_resource type="Animation" id="Animation_ix241"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("jensen:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(560.00006, -54.000008)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("UI/Panel:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("UI/Panel/VBoxContainer/RichTextLabel:visible_ratio")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("UI/Panel/VBoxContainer/RichTextLabel:text")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["As you may know, NVIDIA's stocks are suffering because of the Chinese spy known as Alice Huang."]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("UI/Panel/VBoxContainer/RichTextLabel:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("UI/VBoxContainer:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_8vcau"]
+resource_name = "new_animation"
+length = 15.966666
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("jensen:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.02, 2.02),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(556, -75.00006), Vector2(560.00006, -54.000008), Vector2(564, 582.00006)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("UI/Panel:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.03, 3.05),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("UI/Panel/VBoxContainer/RichTextLabel:visible_ratio")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(3.12, 3.9333334, 5.83, 5.89, 7.96, 9.988, 10.058, 12.368401),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("UI/Panel/VBoxContainer/RichTextLabel:text")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(3.12, 5.9333334, 10.058),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": ["I have a task for you, paraplegic hitman.", "As you may know, NVIDIA's stocks are suffering because of the Chinese spy known as Alice Huang.", "I need you to 'take care' of her. Using only an explosive pistol, of course. *aggressive winking*"]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("UI/Panel/VBoxContainer/RichTextLabel:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(3.12, 5.83, 5.94, 9.988, 10.058),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [true, false, true, false, true]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("UI/VBoxContainer:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 15.966666),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bl24s"]
+_data = {
+&"RESET": SubResource("Animation_ix241"),
+&"new_animation": SubResource("Animation_8vcau")
+}
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w5tbj"]
+bg_color = Color(0.6, 0.6, 0.6, 0.36078432)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8vcau"]
+bg_color = Color(0.39688924, 0.39688927, 0.3968891, 0.36078432)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bl24s"]
+bg_color = Color(0.18179765, 0.18179768, 0.18179756, 0.36078432)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
 
 [node name="cutscene" type="Node2D" unique_id=1231854476]
+script = ExtResource("1_ix241")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=83320741]
+libraries/ = SubResource("AnimationLibrary_bl24s")
+autoplay = &"new_animation"
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=744934989]
-offset_left = -29.0
-offset_top = 453.0
-offset_right = 1174.0
-offset_bottom = 679.0
-color = Color(0.18359044, 0.18359044, 0.18359044, 1)
-
-[node name="TextureRect" type="TextureRect" parent="." unique_id=899544588]
-offset_left = -373.0
-offset_top = -224.0
-offset_right = 3467.0
-offset_bottom = 4576.0
+[node name="jensen" type="Sprite2D" parent="." unique_id=1657856096]
+position = Vector2(560.00006, -54.000008)
+scale = Vector2(1.23, 1.23)
 texture = ExtResource("1_ye7fo")
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1424513145]
+
+[node name="Panel" type="Panel" parent="UI" unique_id=1312087838]
+visible = false
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -499.0
+offset_top = -226.0
+offset_right = 502.0
+offset_bottom = -38.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/Panel" unique_id=2100253451]
+layout_mode = 0
+offset_right = 991.0
+offset_bottom = 200.0
+
+[node name="Label" type="Label" parent="UI/Panel/VBoxContainer" unique_id=1620727039]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "Jensen Huang"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="UI/Panel/VBoxContainer" unique_id=697777621]
+visible = false
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 36
+bbcode_enabled = true
+text = "As you may know, NVIDIA's stocks are suffering because of the Chinese spy known as Alice Huang."
+scroll_active = false
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI" unique_id=1844139343]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -172.5
+offset_top = -201.5
+offset_right = 172.5
+offset_bottom = 57.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="Button2" type="Button" parent="UI/VBoxContainer" unique_id=1482130358]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_w5tbj")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8vcau")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bl24s")
+text = "I AGREE.
+"
+
+[node name="Button3" type="Button" parent="UI/VBoxContainer" unique_id=14826675]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_w5tbj")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8vcau")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bl24s")
+text = "I AGREE.
+"
+
+[connection signal="pressed" from="UI/VBoxContainer/Button2" to="." method="_on_next1_pressed"]
+[connection signal="pressed" from="UI/VBoxContainer/Button3" to="." method="_on_next2_pressed"]
