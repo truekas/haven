@@ -1,0 +1,104 @@
+[gd_scene format=3 uid="uid://crev2inf1u6xe"]
+
+[ext_resource type="Texture2D" uid="uid://d4mj5gs80wnom" path="res://paraplegic_hitman.png" id="1_06t4h"]
+[ext_resource type="Script" uid="uid://dn12u7ocbrg15" path="res://main_menu.gd" id="1_7vrkn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w5tbj"]
+bg_color = Color(11.708, 11.708, 11.708, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7vrkn"]
+bg_color = Color(0.26111263, 0.26111263, 0.2611126, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_06t4h"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[node name="main_menu" type="Control" unique_id=322702625]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7vrkn")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1849774072]
+layout_mode = 0
+offset_left = -608.0
+offset_top = -368.0
+offset_right = 619.0
+offset_bottom = 456.0
+color = Color(0.7911056, 0.7911056, 0.7911056, 1)
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=149190283]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -480.0
+offset_top = -272.0
+offset_right = 480.0
+offset_bottom = -32.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("1_06t4h")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1698122855]
+layout_mode = 1
+offset_left = -290.0
+offset_top = -11.75
+offset_right = 290.0
+offset_bottom = 283.75
+theme_override_constants/separation = 40
+alignment = 1
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=844387362]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.0093103545, 0.0093103545, 0.0093103545, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_w5tbj")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7vrkn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_06t4h")
+text = "PLAY
+"
+
+[node name="Button2" type="Button" parent="VBoxContainer" unique_id=1733130979]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.0093103545, 0.0093103545, 0.0093103545, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_w5tbj")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7vrkn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_06t4h")
+text = "OPTIONS
+"
+
+[node name="Button3" type="Button" parent="VBoxContainer" unique_id=2011391146]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.0093103545, 0.0093103545, 0.0093103545, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_w5tbj")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7vrkn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_06t4h")
+text = "EXIT"
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_exit_pressed"]
