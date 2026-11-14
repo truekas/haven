@@ -13,7 +13,7 @@ func _process(delta: float) -> void:
 		scale.y = -1;
 	else:
 		scale.y = 1;
-	if Input.is_action_just_pressed("shoot") and ammo > 0:
+	if Input.is_action_just_pressed("shoot"):
 		ammo -= 1;
 		ammo_changed.emit(ammo);
 		var bullet_instance = BULLET.instantiate();

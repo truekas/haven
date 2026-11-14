@@ -360,7 +360,7 @@ texture = ExtResource("2_7mycd")
 script = SubResource("GDScript_q6r6c")
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1395333042]
-zoom = Vector2(0.75, 0.75)
+zoom = Vector2(0.5, 0.5)
 position_smoothing_speed = 6.0
 
 [node name="Gun" type="Node2D" parent="Player" unique_id=1653179480]
@@ -383,7 +383,7 @@ tile_set = SubResource("TileSet_w5tbj")
 rendering_quadrant_size = 15
 
 [node name="AliceHuang" type="CharacterBody2D" parent="." unique_id=746143058]
-position = Vector2(-1464, 72)
+position = Vector2(2147, 5197)
 script = ExtResource("5_7mycd")
 
 [node name="Sprite2D" type="Sprite2D" parent="AliceHuang" unique_id=752321736]
@@ -394,17 +394,32 @@ texture = ExtResource("5_lquwl")
 shape = SubResource("RectangleShape2D_bcsxf")
 
 [node name="Portal1" type="Area2D" parent="." unique_id=824909601]
-position = Vector2(-3083, 1575)
+position = Vector2(2268, -392)
 script = ExtResource("7_5vw27")
 
 [node name="Sprite2D" type="Sprite2D" parent="Portal1" unique_id=1467054938]
-position = Vector2(5505, -1946)
 scale = Vector2(4, 4)
 texture = ExtResource("7_272bh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Portal1" unique_id=1260259573]
-position = Vector2(5504, -1948)
 shape = SubResource("RectangleShape2D_bxopc")
 
 [node name="Level2" type="Marker2D" parent="." unique_id=1066567805]
-position = Vector2(-1231, 2482)
+position = Vector2(-1612, 2506)
+
+[node name="Portal2" type="Area2D" parent="." unique_id=1362409676]
+position = Vector2(1672, 2568)
+script = ExtResource("7_5vw27")
+
+[node name="Sprite2D" type="Sprite2D" parent="Portal2" unique_id=1545716828]
+rotation = 0.7853982
+scale = Vector2(4, 4)
+texture = ExtResource("7_272bh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portal2" unique_id=1568354924]
+position = Vector2(0, -8)
+rotation = 0.7853982
+shape = SubResource("RectangleShape2D_bxopc")
+
+[node name="Level3" type="Marker2D" parent="." unique_id=779580522]
+position = Vector2(740, 9377)
