@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cb6xgcgjfhtxg" path="res://Adobe Express - file.png" id="1_ye7fo"]
 
 [sub_resource type="Animation" id="Animation_ix241"]
-length = 0.001
+length = 11.033334
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -112,7 +112,7 @@ tracks/2/path = NodePath("ui/Panel/VBoxContainer/RichTextLabel:visible_ratio")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(3.12, 3.9333334, 5.83, 5.89, 7.96, 9.988, 10.058, 12.368401),
+"times": PackedFloat32Array(3.12, 3.9333334, 5.83, 5.89, 7.96, 9.988, 10.058, 13.133333),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
 "values": [0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0]
@@ -127,7 +127,7 @@ tracks/3/keys = {
 "times": PackedFloat32Array(3.12, 5.9333334, 10.058),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": ["I have a task for you, paraplegic hitman.", "As you may know, NVIDIA's stocks are suffering because of the Chinese spy known as Alice Huang.", "I need you to 'take care' of her. Using only an explosive pistol, of course. *aggressive winking*"]
+"values": ["I have a task for you, paraplegic hitman.", "As you may know, NVIDIA's stocks are suffering because of the Chinese spy known as Alice Huang.", "I need you to 'take care' of her so my company can bounce back. Using only an explosive pistol, of course."]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
@@ -268,16 +268,5 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_bl24s")
 text = "I AGREE.
 "
 
-[node name="Button" type="Button" parent="ui" unique_id=28750538]
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -144.0
-offset_bottom = 65.0
-grow_horizontal = 0
-theme_override_font_sizes/font_size = 32
-text = "SKIP"
-
 [connection signal="pressed" from="ui/VBoxContainer/Button2" to="." method="_on_next1_pressed"]
 [connection signal="pressed" from="ui/VBoxContainer/Button3" to="." method="_on_next2_pressed"]
-[connection signal="pressed" from="ui/Button" to="." method="_on_skip_pressed"]
