@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://djf7keuxeyyoh"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_bxopc"]
+font_size = 96
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=405422347]
+
+[node name="Label" type="Label" parent="." unique_id=1858645595]
+offset_left = 953.0
+offset_top = 512.0
+offset_right = 1149.0
+offset_bottom = 644.0
+text = "100"
+label_settings = SubResource("LabelSettings_bxopc")

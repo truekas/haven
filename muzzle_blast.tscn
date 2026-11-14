@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://cgwgy4bssmi44"]
+
+[ext_resource type="Script" uid="uid://k7ch6hr11o5p" path="res://muzzle_blast.gd" id="1_pj4ap"]
+[ext_resource type="Texture2D" uid="uid://dmuar7m4g8avq" path="res://muzzle_blast.png" id="1_sxrtm"]
+
+[node name="MuzzleBlast" type="Node2D" unique_id=1107706225]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1332764929]
+texture = ExtResource("1_sxrtm")
+script = ExtResource("1_pj4ap")
