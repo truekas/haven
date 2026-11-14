@@ -165,6 +165,7 @@ _data = {
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=2140905034]
 root_node = NodePath("../jensen")
 libraries/ = SubResource("AnimationLibrary_b3un6")
+autoplay = &"new_animation1"
 
 [node name="jensen" type="Sprite2D" parent="." unique_id=1845227614]
 visible = false
