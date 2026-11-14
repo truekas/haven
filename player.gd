@@ -9,13 +9,15 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("shoot"):
 		var mouse = get_global_mouse_position();
 		var shoot_direction = (global_position - mouse).normalized();
-		velocity += shoot_direction * 1000
+		velocity += shoot_direction * 2000
 	if not is_on_floor():
 		velocity += get_gravity() * delta
+	if is_on_floor():
+		velocity.x = move_toward(velocity.x, 0, 1000 * delta)
+
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
-	velocity.x = move_toward(velocity.x, 0, 1000 * delta)
-
+		
 	move_and_slide();
 
 func _process(delta: float) -> void:

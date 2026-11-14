@@ -13,8 +13,12 @@ func _process(delta: float) -> void:
 
 
 func _on_next1_pressed() -> void:
-	get_tree().change_scene_to_file("res://node_2d.tscn") # Replace with function body.
+	get_tree().change_scene_to_file("res://main.tscn") # Replace with function body.
 
 
 func _on_next2_pressed() -> void:
-	get_tree().change_scene_to_file("res://node_2d.tscn") # Replace with function body.
+	get_tree().change_scene_to_file("res://main.tscn") # Replace with function body.
+
+
+func _on_skip_pressed() -> void:
+	get_tree().change_scene_to_file("res://main.tscn")# Replace with function body.

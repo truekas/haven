@@ -20,7 +20,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("UI/Panel:visible")
+tracks/1/path = NodePath("ui/Panel:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -32,7 +32,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("UI/Panel/VBoxContainer/RichTextLabel:visible_ratio")
+tracks/2/path = NodePath("ui/Panel/VBoxContainer/RichTextLabel:visible_ratio")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -44,7 +44,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("UI/Panel/VBoxContainer/RichTextLabel:text")
+tracks/3/path = NodePath("ui/Panel/VBoxContainer/RichTextLabel:text")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -56,7 +56,7 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("UI/Panel/VBoxContainer/RichTextLabel:visible")
+tracks/4/path = NodePath("ui/Panel/VBoxContainer/RichTextLabel:visible")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -68,7 +68,7 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("UI/VBoxContainer:visible")
+tracks/5/path = NodePath("ui/VBoxContainer:visible")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
@@ -96,7 +96,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("UI/Panel:visible")
+tracks/1/path = NodePath("ui/Panel:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -108,7 +108,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("UI/Panel/VBoxContainer/RichTextLabel:visible_ratio")
+tracks/2/path = NodePath("ui/Panel/VBoxContainer/RichTextLabel:visible_ratio")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -120,7 +120,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("UI/Panel/VBoxContainer/RichTextLabel:text")
+tracks/3/path = NodePath("ui/Panel/VBoxContainer/RichTextLabel:text")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -132,7 +132,7 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("UI/Panel/VBoxContainer/RichTextLabel:visible")
+tracks/4/path = NodePath("ui/Panel/VBoxContainer/RichTextLabel:visible")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -144,7 +144,7 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("UI/VBoxContainer:visible")
+tracks/5/path = NodePath("ui/VBoxContainer:visible")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
@@ -193,9 +193,9 @@ position = Vector2(560.00006, -54.000008)
 scale = Vector2(1.23, 1.23)
 texture = ExtResource("1_ye7fo")
 
-[node name="UI" type="CanvasLayer" parent="." unique_id=1424513145]
+[node name="ui" type="CanvasLayer" parent="." unique_id=1424513145]
 
-[node name="Panel" type="Panel" parent="UI" unique_id=1312087838]
+[node name="Panel" type="Panel" parent="ui" unique_id=1312087838]
 visible = false
 anchors_preset = 7
 anchor_left = 0.5
@@ -209,18 +209,18 @@ offset_bottom = -38.0
 grow_horizontal = 2
 grow_vertical = 0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="UI/Panel" unique_id=2100253451]
+[node name="VBoxContainer" type="VBoxContainer" parent="ui/Panel" unique_id=2100253451]
 layout_mode = 0
 offset_right = 991.0
 offset_bottom = 200.0
 
-[node name="Label" type="Label" parent="UI/Panel/VBoxContainer" unique_id=1620727039]
+[node name="Label" type="Label" parent="ui/Panel/VBoxContainer" unique_id=1620727039]
 custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
 theme_override_font_sizes/font_size = 22
 text = "Jensen Huang"
 
-[node name="RichTextLabel" type="RichTextLabel" parent="UI/Panel/VBoxContainer" unique_id=697777621]
+[node name="RichTextLabel" type="RichTextLabel" parent="ui/Panel/VBoxContainer" unique_id=697777621]
 visible = false
 custom_minimum_size = Vector2(0, 120)
 layout_mode = 2
@@ -231,7 +231,7 @@ scroll_active = false
 visible_characters = 0
 visible_ratio = 0.0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="UI" unique_id=1844139343]
+[node name="VBoxContainer" type="VBoxContainer" parent="ui" unique_id=1844139343]
 visible = false
 anchors_preset = 8
 anchor_left = 0.5
@@ -246,7 +246,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 20
 
-[node name="Button2" type="Button" parent="UI/VBoxContainer" unique_id=1482130358]
+[node name="Button2" type="Button" parent="ui/VBoxContainer" unique_id=1482130358]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -257,7 +257,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_bl24s")
 text = "I AGREE.
 "
 
-[node name="Button3" type="Button" parent="UI/VBoxContainer" unique_id=14826675]
+[node name="Button3" type="Button" parent="ui/VBoxContainer" unique_id=14826675]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -268,5 +268,16 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_bl24s")
 text = "I AGREE.
 "
 
-[connection signal="pressed" from="UI/VBoxContainer/Button2" to="." method="_on_next1_pressed"]
-[connection signal="pressed" from="UI/VBoxContainer/Button3" to="." method="_on_next2_pressed"]
+[node name="Button" type="Button" parent="ui" unique_id=28750538]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -144.0
+offset_bottom = 65.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 32
+text = "SKIP"
+
+[connection signal="pressed" from="ui/VBoxContainer/Button2" to="." method="_on_next1_pressed"]
+[connection signal="pressed" from="ui/VBoxContainer/Button3" to="." method="_on_next2_pressed"]
+[connection signal="pressed" from="ui/Button" to="." method="_on_skip_pressed"]
