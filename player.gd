@@ -3,7 +3,7 @@ extends CharacterBody2D
 const SPEED = 900.0
 const JUMP_VELOCITY = -900.0
 @onready var sprite: Sprite2D = $Sprite2D
- 
+	
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if Input.is_action_just_pressed("shoot"):
